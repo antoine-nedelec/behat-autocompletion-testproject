@@ -1,0 +1,10 @@
+parameters:
+    level: 7
+    excludePaths:
+        - src/Symfony/*
+    paths:
+        - src
+        - tests
+    checkMissingIterableValueType: false
+    ignoreErrors:
+        - '#Call to an undefined method Doctrine\\ORM\\EntityRepository<.+>::.+\(\).#'

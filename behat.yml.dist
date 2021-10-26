@@ -1,0 +1,13 @@
+default:
+    suites:
+        default:
+            contexts:
+                - App\Tests\Behat\FeatureContext
+                - Behat\MinkExtension\Context\MinkContext
+
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            bootstrap: tests/bootstrap.php
+        Behat\MinkExtension:
+            goutte: ~
+            base_url: http://localhost:8000/
